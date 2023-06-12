@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="top_btn" class="invisible">
+        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM385 231c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-71-71V376c0 13.3-10.7 24-24 24s-24-10.7-24-24V193.9l-71 71c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 119c9.4-9.4 24.6-9.4 33.9 0L385 231z"/>
+    </svg>
+    <header id="header">
+        <div id="header_nav">
+            <button id="openBtn">&#9776;</button>
+            <h1 class="main_title">
+                <a href="#">PYG's Portfolio</a> 
+            </h1>
+        </div>
+    </header>
+    <section id="first">
+        <h1 class="section_title">
+            Thanks for your visit.
+        </h1>
+        <h2 class="section_myname">
+            Park Yang Geun
+        </h2>
+        <p class="changing_wrap">
+            <span class="changing_text">
+                Hello, World!
+            </span>
+            <span class="text_cursor"> |</span>
+        </p>
+    </section>
+
+    <nav id="sideBar" class="side_hidden">
+        <div class="side_title_wrap">
+            <h2 class="side_title_text">
+                <a href="#">
+                    PYG's <br>
+                    Portfolio
+                </a>
+                
+            </h2>
+            <img src="./img/myprofile_img.jpg" alt="" class="sidebar_myimg">
+        </div>
+        <ul>
+            <li class="sideBar_list">
+                <a href="#about_me">About Me</a>
+            </li>
+            <li class="sideBar_list">
+                <a href="#my_skills">My Skills</a>
+            </li>
+            <li class="sideBar_list">
+                <a href="project1.html">My Project</a>
+            </li>
+            <li class="sideBar_list">
+                <a href="#contact">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="overLay" class="overLay_hidden">
+    </div>
+
+    <main id="main">
+        <section id="about_me">
+            <h2 class="main_section_title">About Me</h2>
+            <hr class="section_separate_bar">
+
+            <div class="profile">
+                <div class="profile_img_wrap">
+                    <img class="myprofile_img" src="./img/myprofile_img.jpg" alt="" >
+                </div>
+                <div class="profile_text_wrap">
+                    <h2 class="profile_title">Newcomer Developer</h2>
+                    <p class="profile_text">
+                        신입 개발자 박양근입니다.<br>
+                        <br>
+
+                         트렌드를 따라가는 것이 아닌 트렌드를 선구하는 개발자가 되고 싶습니다.<br>
+                        도전을 두려워하지 않고 끊임없이 노력하는 사람이 되겠습니다.
+                    </p>
+                    <ul>
+                        <li>
+                            <svg class="profile_subtext_icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 256 512"><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
+                            <span><strong>Name:</strong> 박 양 근</span>
+                        </li>
+                        <li>
+                            <svg class="profile_subtext_icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 256 512"><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
+                            <span><strong>Phone:</strong> 010-5653-9950</span>
+                        </li>
+                        <li>
+                            <svg class="profile_subtext_icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 256 512"><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
+                            <span><strong>Email:</strong> rung304@naver.com</span>
+                        </li>
+                        <li>
+                            <svg class="profile_subtext_icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 256 512"><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
+                            <span><strong>Address:</strong> 인천광역시 부평구</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section id="resume">
+                <h2 class="main_section_title">My Education & Carrer</h2>
+                <hr class="section_separate_bar">
+                <h3 class="resume_sub_title">학력, 경력에 대한 설명입니다.</h3>
+                <div class="record">
+                    <div class="record_bigbox">
+                        <h3 class="resume_sub_title">Education</h3>
+                        <div class="record_main_wrap">
+                            <div class="resume_index_box">
+                                <div class="separate_ball"></div>
+                                <h3 class="resume_index">서운고등학교</h5>
+                                <span class="explain_date">2012~2015</span>
+                                <span class="explain_text">인문계 고등학교 졸업</span>
+                            </div>
+                            <div class="resume_index_box">
+                                <div class="separate_ball"></div>
+                                <h3 class="resume_index">한국산업기술대학교</h5>
+                                <span class="explain_date">2015~2022</span>
+                                <span class="explain_text">메카트로닉스공학과 졸업</span>
+                                <ul>
+                                    <li>
+                                        대학교에서 프로그래밍 언어를 처음 접했고, 개발에 대해 흥미를 갖게 되었습니다.
+                                    </li>
+                                    <li>
+                                        Language : C, C++
+                                    </li>
+                                    <li>
+                                        Project tool : Visual Studio
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="record_bigbox">
+                        <h3 class="resume_sub_title">External activities</h3>
+                        <div class="record_main_wrap">
+                            <div class="resume_index_box">
+                                <div class="separate_ball"></div>
+                                <h3 class="resume_index">코리아IT아카데미-부평</h5>
+                                <span class="explain_date">2023.06</span>
+                                <span class="explain_text">프론트 개발 양성과정 수료</span>
+                                <ul>
+                                    <li>
+                                        웹 프로그래밍에 필요한 Front End 기술에는 html, css JavaScript, jQuery, React 를 배웠습니다.
+                                    </li>
+                                    <li>
+                                        Language: <br>
+                                        - Javascript : Node, JQuery, Ajax, React <br>
+                                        - Css : Tailwind
+                                    </li>
+                                    <li>
+                                        Project tool : Visual Studio Code, Github
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="more_btn">
+                            <span class="more_btn_text">더 보기</span>
+                        </div>
+                    </div>
+                    
+                    <div class="record_bigbox">
+                        <h3 class="resume_sub_title">Career</h3>
+                        <div class="record_main_wrap">
+                            <div class="resume_index_box">
+                                <div class="separate_ball"></div>
+                                <h3 class="resume_index">(주) 스마트링크</h5>
+                                <span class="explain_date">2022.04~2023.01</span>
+                                <span class="explain_text">SW 개발팀 근무</span>
+                                <ul>
+                                    <li>
+                                        머신비전 장비의 전체적인 프로그래밍과 GUI 개발 및 프로그램 유지보수업무를 하였습니다.
+                                    </li>
+                                    <li>
+                                        Language: <br>
+                                        - C++
+                                    </li>
+                                    <li>
+                                        Project tool : Visual Studio, Qt, Basler
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div id="career_more_btn">
+                            <span class="more_btn_text">더 보기</span>
+                        </div> -->
+                    </div>
+
+                    <div class="record_bigbox">
+                        <h3 class="resume_sub_title">Develop Note</h3>
+                        <div class="record_main_wrap">
+                            <div class="resume_index_box">
+                                <div class="separate_ball"></div>
+                                <h3 class="resume_index">티스토리, Notion</h5>
+                                <ul>
+                                    <li>
+                                        배웠던 내용들을 복습하고 지식을 공유하기 위해서 개인 개발 노트를 작성했습니다.
+                                    </li>
+                                    <li>
+                                        TiStory, Notion
+                                    </li>
+                                    <li>
+                                        Link : <a target="_blank" href="https://rung304.tistory.com/">https://rung304.tistory.com/</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div id="career_more_btn">
+                            <span class="more_btn_text">더 보기</span>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="my_skills">
+            <div class="title_box">
+                <h2 class="main_section_title">Skill</h2>
+                <hr class="section_separate_bar">
+                <h3 class="resume_sub_title">배우고, 사용해봤던 기술들입니다.</h3>
+            </div>
+            
+            <div class="grid_background">
+                <div class="grid_skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" alt="" class="grid_item">
+                    <img src="" alt="" class="grid_item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="" class="grid_item2">
+                    <img src="" alt="" class="grid_item">
+                    <img src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-2038874-1720087.png?f=avif&w=256" alt="" class="grid_item">
+                    <img src="" alt="" class="grid_item">
+                    <img src="https://play-lh.googleusercontent.com/u9O8p0hF6FMQp_hgoGwhq0zHeidQO2Jbe2t2z1o0RDh8gaoyEtHBZJ84SgZa3yQMkLA" alt="" class="grid_item2">
+                    <img src="" alt="" class="grid_item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="" class="grid_item">
+                    <img src="" alt="" class="grid_item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="" class="grid_item2">
+                    <img src="" alt="" class="grid_item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png" alt="" class="grid_item">
+                    <img src="" alt="" class="grid_item">
+                    <img src="https://images.velog.io/images/gnoeyah/post/5e212110-866b-4d09-805c-28268ea8d85a/c%EC%96%B8%EC%96%B4%20%EC%8B%AC%ED%99%94.png" alt="" class="grid_item2">
+                    <img src="" alt="" class="grid_item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="" class="grid_item2">
+                    <img src="" alt="" class="grid_item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="" class="grid_item2">
+                    <img src="" alt="" class="grid_item">
+                </div>
+                
+            </div>
+        </section>
+        <!-- <section id="my_project">
+            <div class="title_box">
+                <h2 class="main_section_title">Project</h2>
+                <hr class="section_separate_bar">
+                <h3 class="resume_sub_title">AwesomeStory-(Jqeury)</h3>
+            </div>
+            <div class="animate_wrap">
+                <div class="slide_box">
+                    <div id="slide_container">
+                        <img src="img/awesome_login_capture.PNG" alt="" class="item">
+                        <img src="img/awesome_login2_capture.PNG" alt="" class="item">
+                        <img src="img/awesome_account.PNG" alt="" class="item">
+                        <img src="img/awesome_account_input.PNG" alt="" class="item">
+                        <img src="img/awesome_account2_capture.PNG" alt="" class="item">
+                        <img src="img/awesome_account2_input.PNG" alt="" class="item">
+                        <img src="img/awesome_account2_input2.PNG" alt="" class="item">
+                        <img src="img/awesome_mainpage_capture.PNG" alt="" class="item">
+                        <img src="img/awesome_slidebar.PNG" alt="" class="item">
+                        <img src="img/awesome_evalpage2.PNG" alt="" class="item">
+                        <img src="img/awesome_evalpage.PNG" alt="" class="item">
+                        <img src="img/awesome_eval_person.PNG" alt="" class="item">
+                        <img src="img/awesome_eval_person_input.PNG" alt="" class="item">
+                        <img src="img/awesome_question.PNG" alt="" class="item">
+                        <img src="img/awesome_coupon.PNG" alt="" class="item">
+                        <img src="img/awesome_notice.PNG" alt="" class="item">
+                        <img src="img/awesome_notice2.PNG" alt="" class="item">
+                        <img src="img/awesome_chat.PNG" alt="" class="item">
+                        <img src="img/awesome_peanut.PNG" alt="" class="item">
+                        <img src="img/awesome_chat3.PNG" alt="" class="item">
+                        <img src="img/awesome_chat2.PNG" alt="" class="item">
+                        <img src="img/awesome_review_page.PNG" alt="" class="item">
+                        <img src="img/awesome_challenge.PNG" alt="" class="item">
+                        <img src="img/awesome_companylist.PNG" alt="" class="item">
+                        <img src="img/awesome_company.PNG" alt="" class="item">
+                        <img src="img/awesome_write_review.PNG" alt="" class="item">
+                    </div>
+                    <button id="prev-btn" class="slide_btn_hidden">&#10094;</button>
+                    <button id="next-btn">&#10095;</button>
+                </div>
+
+                <div class="slide_explain_wrap">
+                    <p class="slide_explain">
+                        HTML과 CSS, JavaScript, JQuery 를 사용해서 PhotoShop 디자인 파일을 보고 직접 제작하였습니다.
+                    </p>
+                </div>
+            </div>
+        </section> -->
+        
+        <section id="contact">
+            <h2 class="main_section_title">Contact</h2>
+            <hr class="section_separate_bar">
+            <h3 class="resume_sub_title">Thanks for your visit.</h3>
+
+            <ul class="contact_listbox">
+                <li class="contact_list">
+                    <div class="icon_wrap">
+                        <svg class="contact_icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                    </div>
+                    <div class="contact_text_wrap">
+                        <h4>Location:</h4>
+                        <p>인천광역시 부평구</p>
+                    </div>
+                    
+                </li>
+                <li class="contact_list">
+                    <div class="icon_wrap">
+                        <svg class="contact_icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M128 0C110.3 0 96 14.3 96 32V224h96V192c0-35.3 28.7-64 64-64H480V32c0-17.7-14.3-32-32-32H128zM256 160c-17.7 0-32 14.3-32 32v32h96c35.3 0 64 28.7 64 64V416H576c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H256zm240 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM64 256c-17.7 0-32 14.3-32 32v13L187.1 415.9c1.4 1 3.1 1.6 4.9 1.6s3.5-.6 4.9-1.6L352 301V288c0-17.7-14.3-32-32-32H64zm288 84.8L216 441.6c-6.9 5.1-15.3 7.9-24 7.9s-17-2.8-24-7.9L32 340.8V480c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V340.8z"/></svg>
+                    </div>
+                    <div class="contact_text_wrap">
+                        <h4>E-mail:</h4>
+                        <p>rung304@naver.com</p>
+                    </div>
+                </li>
+                <li class="contact_list">
+                    <div class="icon_wrap">
+                        <svg class="contact_icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                    </div>
+                    <div class="contact_text_wrap">
+                        <h4>Call:</h4>
+                        <p>010-5653-9950</p>
+                    </div>
+                </li>
+                <li class="contact_list">
+                    <div class="icon_wrap">
+                        <svg class="contact_icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </div>
+                    <div class="contact_text_wrap">
+                        <h4>Github:</h4>
+                        <a target="_blank" href="https://github.com/ParkYangGeun">
+                            <p>https://github.com/ParkYangGeun</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="footer">
+        © 2023. Park Yang Geun.
+    </footer>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
