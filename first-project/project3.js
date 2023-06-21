@@ -5,7 +5,6 @@ var nextpageBtn = document.getElementsByClassName("nextpage_btn")[0];
 var titleBox = document.getElementsByClassName("title_box")[0];
 var allWrap = document.getElementsByClassName("all_wrap")[0];
 var imageWidth;
-
 window.addEventListener("load", function () {
   first_ani[0].classList.add("full");
 
@@ -23,15 +22,16 @@ window.addEventListener("load", function () {
   }, 1500);
 
   if (window.innerWidth < 650) {
-    imageWidth = 200;
-  } else {
     imageWidth = 300;
+  } else {
+    imageWidth = 540;
   }
 });
 
 var slide_container = document.getElementById("slide_container");
 var prevBtn = document.getElementById("prev-btn");
 var nextBtn = document.getElementById("next-btn");
+
 var previousIndex = 0;
 var thisIndex = 0;
 var items = document.getElementsByClassName("item");
@@ -43,12 +43,12 @@ window.addEventListener("resize", function () {
     slide_container.style.transform = `translateX(-${
       thisIndex * imageWidth
     }px)`;
-    imageWidth = 200;
+    imageWidth = 300;
   } else {
     slide_container.style.transform = `translateX(-${
       thisIndex * imageWidth
     }px)`;
-    imageWidth = 300;
+    imageWidth = 540;
   }
 });
 
@@ -92,29 +92,29 @@ var endPoint = 0;
 var mouse_arr = [];
 
 slide_container.addEventListener("touchstart", (e) => {
-  e.preventDefault();
-  startPoint = e.touches[0].pageX;
-});
-
-slide_container.addEventListener("touchend", (e) => {
-  e.preventDefault();
-  endPoint = e.changedTouches[0].pageX;
-
-  if (startPoint < endPoint) {
-    if (prevflag == true) {
-      if (endPoint - startPoint > 150) {
-        navigateTo(-2);
-      } else navigateTo(-1);
+    e.preventDefault();
+    startPoint = e.touches[0].pageX;
+  });
+  
+  slide_container.addEventListener("touchend", (e) => {
+    e.preventDefault();
+    endPoint = e.changedTouches[0].pageX;
+  
+    if (startPoint < endPoint) {
+      if (prevflag == true) {
+        if (endPoint - startPoint > 150) {
+          navigateTo(-2);
+        } else navigateTo(-1);
+      }
+    } else if (startPoint > endPoint) {
+      if (nextflag == true) {
+        if (startPoint - endPoint > 150) {
+          navigateTo(2);
+        } else navigateTo(1);
+      }
     }
-  } else if (startPoint > endPoint) {
-    if (nextflag == true) {
-      if (startPoint - endPoint > 150) {
-        navigateTo(2);
-      } else navigateTo(1);
-    }
-  }
-  mouse_arr = [];
-});
+    mouse_arr = [];
+  });
 
 slide_container.addEventListener("drag", (e) => {
   e.preventDefault();
@@ -122,6 +122,8 @@ slide_container.addEventListener("drag", (e) => {
 });
 slide_container.addEventListener("dragend", (e) => {
   e.preventDefault();
+  // console.log(mouse_arr[0])
+  // console.log("mousedrop", e.pageX);
   endPoint = e.pageX;
 
   if (mouse_arr[0] < endPoint) {
@@ -129,12 +131,19 @@ slide_container.addEventListener("dragend", (e) => {
       if (endPoint - mouse_arr[0] > 200) {
         navigateTo(-2);
       } else navigateTo(-1);
+
+      // if(endPoint-mouse_arr[0]>50){
+      //     navigateTo(-1);
+      // }
     }
   } else if (mouse_arr[0] > endPoint) {
     if (nextflag == true) {
       if (mouse_arr[0] - endPoint > 200) {
         navigateTo(2);
       } else navigateTo(1);
+      // if(mouse_arr[0]-endPoint>50){
+      //     navigateTo(1);
+      // }
     }
   }
   mouse_arr = [];
@@ -154,26 +163,12 @@ homeBtn.addEventListener("click", function () {
   }, 1000);
 });
 
-var go_nextpage = document.getElementsByClassName("nextpage_btn_img")[0];
-
-go_nextpage.addEventListener("click", function () {
+nextpageBtn.addEventListener("click", function () {
   first_ani[0].classList.remove("full");
   homeBtn.classList.remove("opacity_100");
   first_ani[0].classList.remove("add_scroll");
   first_ani[0].classList.add("overflow_hidden");
   setTimeout(function () {
-    location.href = "project3.html";
-  }, 1000);
-});
-
-var go_prevpage = document.getElementsByClassName("prevpage_btn_img")[0];
-
-go_prevpage.addEventListener("click", function () {
-  first_ani[0].classList.remove("full");
-  homeBtn.classList.remove("opacity_100");
-  first_ani[0].classList.remove("add_scroll");
-  first_ani[0].classList.add("overflow_hidden");
-  setTimeout(function () {
-    location.href = "project1.html";
+    location.href = "project2.html";
   }, 1000);
 });

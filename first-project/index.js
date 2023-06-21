@@ -246,8 +246,6 @@ contact_list[3].addEventListener("mouseout",function(){
     contact_icon[3].classList.remove("icon_color_trans")
 })
 
-
-
 topBtn.addEventListener("click",function(){
     document.documentElement.scrollTop=0;
 })
