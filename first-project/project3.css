@@ -86,14 +86,15 @@ body {
   .home_btn_img {
     fill: rgb(212 212 216);
   }
-  .nextpage_btn {
-    width: 4rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 1s;
-  }
+  .nextpage_btn{
+    width:8rem;
+    padding:0.5rem 1rem;
+    cursor:pointer;
+    display: flex;
+    justify-content: space-around;
+    opacity:0;
+    transition:opacity 1s;
+}
   .nextpage_btn_img {
     fill: rgb(212 212 216);
   }
@@ -149,8 +150,16 @@ body {
   .item:hover {
     transform: scale(1.03);
   }
-  #prev-btn,
-  #next-btn {
+
+  .nextpage_btn_img{
+    fill:rgb(212 212 216);
+}
+
+.prevpage_btn_img{
+    fill:rgb(212 212 216)
+}
+
+  #prev-btn, #next-btn {
     position: absolute;
     height: 100%;
     display: flex;
