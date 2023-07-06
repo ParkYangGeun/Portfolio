@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .first_ani {
+    background-image: linear-gradient(to bottom right, #555, #222);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    border-radius: 200%;
+    transition: all 1s;
+  }
+  .add_scroll {
+    overflow: scroll;
+  }
+  .overflow_hidden {
+    overflow: hidden;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  .full {
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 0%;
+  }
+  .bg-trans {
+    background-color: #222;
+  }
+  .resume_sub_title {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    font-size: 1.4rem;
+  }
+  .title_box {
+    opacity: 0;
+    margin-top: 50px;
+    transition: all 1s;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    color: rgb(212 212 216);
+  }
+  .margin_reset {
+    margin-top: 0px;
+  }
+  .section_separate_bar {
+    width: 50px;
+    float: left;
+    height: 5px;
+    border-radius: 40px;
+    background-color: rgb(103, 232, 249);
+    border: 0px;
+    margin-bottom: 10px;
+  }
+  .empty_box {
+    height: 4rem;
+    background-color: transparent;
+  }
+  .all_wrap {
+    width: 100%;
+  }
+  #header {
+    height: 4rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .home_btn {
+    width: 4rem;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .home_btn_img {
+    fill: rgb(212 212 216);
+  }
+  .nextpage_btn{
+    width:8rem;
+    padding:0.5rem 1rem;
+    cursor:pointer;
+    display: flex;
+    justify-content: space-around;
+    opacity:0;
+    transition:opacity 1s;
+}
+  .nextpage_btn_img {
+    fill: rgb(212 212 216);
+  }
+  
+  #my_project {
+    position: relative;
+    width: 98.5%;
+    box-sizing: border-box;
+    height: 95vh;
+    padding: 0 1rem;
+  }
+  .slide_box {
+    margin-top: 300px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 0%;
+    height: 0vh;
+    margin-left: 50%;
+    transition: all 1.5s;
+  }
+  .animate_wrap {
+    position: absolute;
+    background-color: transparent;
+    width: 98%;
+    height: 80vh;
+    box-sizing: border-box;
+    padding: 0px 4rem;
+  }
+  
+  .slide_load {
+    width: 100%;
+    margin-top: 20px;
+    height: 540px;
+    margin-left: 0%;
+  }
+  
+  #slide_container {
+    margin-top: 10px;
+    height: 540px;
+    display: inline-flex;
+    transition: transform 0.5s;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .item {
+    width: 540px;
+    height: 540px;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin-right: 0.5rem;
+  }
+  .item:hover {
+    transform: scale(1.03);
+  }
+
+  .nextpage_btn_img{
+    fill:rgb(212 212 216);
+}
+
+.prevpage_btn_img{
+    fill:rgb(212 212 216)
+}
+
+  #prev-btn, #next-btn {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 2rem;
+  }
+  
+  #prev-btn {
+    top: 0;
+    left: 0;
+  }
+  
+  #next-btn {
+    top: 0;
+    right: 0;
+  }
+  
+  .slide_btn_hidden {
+    visibility: hidden;
+  }
+  
+  .slide_active {
+    opacity: 1;
+  }
+  
+  .slide_explain_wrap {
+    margin-top: 20px;
+    transition: opacity 1.5s;
+    transition-delay: 2s;
+    opacity: 0;
+  }
+  a,
+  li {
+    color: white;
+  }
+  
+  .opacity_100 {
+    opacity: 100;
+  }
+  
+  .slide_explain {
+    color: white;
+    width: 95%;
+  }
+  
+  @media (max-width: 650px) {
+    #slide_container {
+      margin-top: 10px;
+      height: 360px;
+      display: inline-flex;
+      transition: transform 0.5s;
+      box-sizing: border-box;
+      position: relative;
+    }
+  
+    .slide_load {
+      margin-top: 40px;
+      height: 320px;
+    }
+  
+    .item {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      box-sizing: border-box;
+      margin-right: 0.5rem;
+    }
+  
+    #prev-btn,
+    #next-btn {
+      position: absolute;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      color: #333;
+      border: none;
+      font-size: 1.5rem;
+    }
+  
+    .slide_explain {
+      width: 90%;
+    }
+    .slide_explain_wrap {
+      margin-top: 0px;
+    }
+  
+    .animate_wrap {
+      height: 60vh;
+      padding: 0px 1rem;
+    }
+  }
+  

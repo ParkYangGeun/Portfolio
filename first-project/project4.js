@@ -163,36 +163,12 @@ homeBtn.addEventListener("click", function () {
   }, 1000);
 });
 
-// nextpageBtn.addEventListener("click", function () {
-//   first_ani[0].classList.remove("full");
-//   homeBtn.classList.remove("opacity_100");
-//   first_ani[0].classList.remove("add_scroll");
-//   first_ani[0].classList.add("overflow_hidden");
-//   setTimeout(function () {
-//     location.href = "project2.html";
-//   }, 1000);
-// });
-
-var go_nextpage = document.getElementsByClassName("nextpage_btn_img")[0];
-
-go_nextpage.addEventListener("click", function () {
+nextpageBtn.addEventListener("click", function () {
   first_ani[0].classList.remove("full");
   homeBtn.classList.remove("opacity_100");
   first_ani[0].classList.remove("add_scroll");
   first_ani[0].classList.add("overflow_hidden");
   setTimeout(function () {
-    location.href = "project4.html";
-  }, 1000);
-});
-
-var go_prevpage = document.getElementsByClassName("prevpage_btn_img")[0];
-
-go_prevpage.addEventListener("click", function () {
-  first_ani[0].classList.remove("full");
-  homeBtn.classList.remove("opacity_100");
-  first_ani[0].classList.remove("add_scroll");
-  first_ani[0].classList.add("overflow_hidden");
-  setTimeout(function () {
-    location.href = "project2.html";
+    location.href = "project3.html";
   }, 1000);
 });

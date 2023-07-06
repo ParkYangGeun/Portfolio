@@ -192,7 +192,11 @@ h2{
 .slide_explain{
     color:white;
     width:70%;
-    height:100px;
+}
+
+a,
+li {
+  color: white;
 }
 
 @media (max-width:650px){
